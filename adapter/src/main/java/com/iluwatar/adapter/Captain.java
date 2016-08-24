@@ -28,28 +28,28 @@ package com.iluwatar.adapter;
  */
 public class Captain implements BattleShip {
 
-  private BattleFishingBoat battleFishingBoat;
+  private BattleShip BattleShip;
 
   public Captain() {
 
   }
 
-  public Captain(BattleFishingBoat battleFishingBoat) {
-    this.battleFishingBoat = battleFishingBoat;
+  public Captain(BattleShip battleship) {
+    this.battleship = battleship;
   }
 
-  public void setBattleship(BattleFishingBoat battleFishingBoat) {
-    this.battleFishingBoat = battleFishingBoat;
+  public void setBattleship(BattleShip battleship) {
+    this.battleship = battleship;
   }
 
   @Override
   public void fire() {
-    battleFishingBoat.fire();
+    battleship.fire();
   }
 
   @Override
   public void move() {
-    battleFishingBoat.move();
+    battleship.move();
   }
 
 }
